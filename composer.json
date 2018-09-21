@@ -13,9 +13,9 @@
         }
     ],
     "autoload": {
-        "files": [
-            "src/check.php"
-        ]
+        "psr-4": {
+          "Ict\\": "src/"
+        }
     },
     "extra": {
         "branch-alias": {
