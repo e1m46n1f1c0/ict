@@ -11,5 +11,10 @@
             "email": "nova_mig@hotmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "src/check.php",
+        ]
+    },
 }
