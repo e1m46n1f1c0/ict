@@ -1,6 +1,6 @@
 {
-    "name": "mvalencia/itc",
-    "description": "itc",
+    "name": "mvalencia/ict",
+    "description": "ict",
     "type": "pseudopack",
     "require": {
         "kint-php/kint": "dev-master"
