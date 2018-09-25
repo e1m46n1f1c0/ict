@@ -1,5 +1,5 @@
 <?php
-namescape Ict;
+namespace Ict;
 
 
 class Ict
