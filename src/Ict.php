@@ -1,15 +1,19 @@
 <?php
 namespace Ict;
 
-
 class Ict
 {
+    private $boot;
+
     private $key;
 
     private $environment;
 
-    public function __construct()
+    public function __construct($boot)
     {
+        $this->boot = $boot;
+
+        $this->checkKey();
     }
 
     public function check($boot = NULL)
