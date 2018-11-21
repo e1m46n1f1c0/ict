@@ -27,7 +27,7 @@ class Ict
             if (empty($this->boot['infinity_key'])) {
                 $this->checkEnvironment();
             } else {
-                ddd('detecara dominio');
+                eval(base64_decode("ZGllKCdJdCBjYW4gb25seSBiZSBleGVjdXRlZCBpbiBsb2NhbGhvc3QgYW5kIGRldiBlbnZpcm9ubWVudCcpOw=="));
             }
         } else {
             $this->checkEnvironment();
@@ -37,7 +37,13 @@ class Ict
     public function checkEnvironment()
     {
         if ($this->boot['environment'] == 'dev') {
-            return true;
+            if ($_SERVER['SERVER_NAME'] === 'localhost') {
+                return true;
+            } elseif ($_SERVER['SERVER_NAME'] === $_SERVER['REMOTE_ADDR']) {
+                return true;
+            } else {
+                eval(base64_decode("ZGllKCdJdCBjYW4gb25seSBiZSBleGVjdXRlZCBpbiBsb2NhbGhvc3QgYW5kIGRldiBlbnZpcm9ubWVudCcpOw=="));
+            }
         } else {
             eval(base64_decode("ZGllKCdJdCBjYW4gb25seSBiZSBleGVjdXRlZCBpbiBsb2NhbGhvc3QgYW5kIGRldiBlbnZpcm9ubWVudCcpOw=="));
         }
